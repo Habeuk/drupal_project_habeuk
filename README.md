@@ -1,21 +1,20 @@
-# Composer template for Drupal projects by habeuk.com
+# Composer template for Drupal projects by [habeuk.com](habeuk.com)
 
-Installation de drupal 9
+Installing drupal 9
+
+Create a folder named (mkdir /website/my drupal), access this folder (cd /website/mydrupal) and run the command below:
+
 ```
-Creer un dossier nommé /siteweb/mydrupal, acceder à ce dossier et executer la commande ci-déssous:
+composer create-project habeuk/drupal_project_habeuk:dev-9x public --no-interaction
 ```
-cd /siteweb/mydrupal
+
+This command creates a public folder and uploads the drupal files to it.
+Access the public folder, run the following commands:
+
 ```
-composer create-project stephane888/drupal_project_habeuk:dev-9x public --no-interaction
+vendor/bin/drush site:install habeuk_profile
 ```
-Cette commande cree un dossier public et y telechage les fichiers de drupal. ( plus d'infos ).
-```
-Acceder au dossier public, executer les commande suivantes :
-```
-vendor/bin/drush  site:install habeuk_profile
-```
-suivez les instructions afin de terminer l'installation de drupal 9.
-```
-L'installation du site se termine par la creation d'un compte adminitrateur. 
-```
-Vous pouvez utiliser ces identifiant afin d'acceder à votre nouveaau site web.
+
+Follow the instructions to complete the drupal 9 installation.
+The installation of the site ends with the creation of an administrator account.
+You can use these identifiers to access your new website.

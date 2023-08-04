@@ -21,7 +21,7 @@
     "drupal/core-project-message": "^9.5",
     "drupal/core-recommended": "^9.5",
     "drush/drush": "^11.1",
-    "stephane888/habeuk_profile": "^2.0 | dev-2x"
+    "habeuk/habeuk_profile": "^2.0 | dev-2x"
   },
   "conflict": {
     "drupal/drupal": "*"
@@ -38,15 +38,15 @@
     "sort-packages": true
   },
   "autoload": {
-        "classmap": [
-            "scripts/NpmPackage.php"
-        ]
+    "classmap": [
+      "scripts/NpmPackage.php"
+    ]
   },
-  "scripts" : {
-  	"npm-install": "DrupalHabeuk\\NpmPackage::npmInstall",
-  	 "post-install-cmd": [
-            "DrupalHabeuk\\NpmPackage::npmInstall"
-        ]
+  "scripts": {
+    "npm-install": "DrupalHabeuk\\NpmPackage::npmInstall",
+    "post-install-cmd": [
+      "DrupalHabeuk\\NpmPackage::npmInstall"
+    ]
   },
   "extra": {
     "drupal-scaffold": {
@@ -85,29 +85,27 @@
         "type:drupal-theme-custom"
       ]
     },
-    "patches": {
-    },
+    "patches": {},
     "drupal-core-project-message": {
       "include-keys": [
         "homepage",
         "support"
       ],
       "post-create-project-cmd-message": [
-	"<bg=blue;fg=white>                                                         </>",
-	"<bg=blue;fg=white>  Congratulations, you've installed the Drupal codebase  </>",
-	"<bg=blue;fg=white>  from the habeuk.com template!                          </>",
-	"<bg=blue;fg=white>                                                         </>",
-	"",
-	"<bg=yellow;fg=black>Next steps</>:",
-	"  * Install the site: https://www.drupal.org/docs/8/install",
-	"  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-	"  * Get support: https://www.drupal.org/support",
-	"  * Get involved with the Drupal community:",
-	"      https://www.drupal.org/getting-involved",
-	"  * Remove the plugin that prints this message:",
-	"      composer remove drupal/core-project-message"
+        "<bg=blue;fg=white>                                                         </>",
+        "<bg=blue;fg=white>  Congratulations, you've installed the Drupal codebase  </>",
+        "<bg=blue;fg=white>  from the habeuk.com template!                          </>",
+        "<bg=blue;fg=white>                                                         </>",
+        "",
+        "<bg=yellow;fg=black>Next steps</>:",
+        "  * Install the site: https://www.drupal.org/docs/8/install",
+        "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+        "  * Get support: https://www.drupal.org/support",
+        "  * Get involved with the Drupal community:",
+        "      https://www.drupal.org/getting-involved",
+        "  * Remove the plugin that prints this message:",
+        "      composer remove drupal/core-project-message"
       ]
     }
   }
-  
 }
