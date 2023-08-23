@@ -1,38 +1,34 @@
 {
-  "name": "stephane888/drupal_project_habeuk",
-  "description": "Project template for Drupal 9 projects with a relocated document root",
+  "name": "habeuk/drupal_project_habeuk",
+  "description": "Drupal 10 by habeuk, @see https://github.com/drupal/recommended-project/blob/10.1.x for more information. ",
   "type": "project",
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.drupal.org/project/drupal",
   "support": {
     "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
     "chat": "https://www.drupal.org/node/314178"
-  },
+  },  
   "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    }
-  ],
-  "require": {
-    "composer/installers": "^2.0",
-    "drupal/core-composer-scaffold": "^10.0",
-    "drupal/core-project-message": "^10.0",
-    "drupal/core-recommended": "^10.0",
-    "drush/drush": "^11.4",
-    "stephane888/habeuk_profile": "^2.0 | dev-2x"
-  },
-  
-  "require-dev": {
-    "kint-php/kint": "^3.3",
-    "drupal/core-dev": "^10.0"
-  },
-  "conflict": {
-    "drupal/drupal": "*"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^2.0",
+        "drupal/core-composer-scaffold": "^10.1",
+        "drupal/core-project-message": "^10.1",
+        "drupal/core-recommended": "^10.1",        
+    },
+    "require-dev": {
+        "drupal/core-dev": "^10.1"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
@@ -41,18 +37,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         },
         "sort-packages": true
-  },
-  "autoload": {
-        "classmap": [
-            "scripts/NpmPackage.php"
-        ]
-  },
-  "scripts" : {
-  	"npm-install": "DrupalHabeuk\\NpmPackage::npmInstall",
-  	 "post-install-cmd": [
-            "DrupalHabeuk\\NpmPackage::npmInstall"
-        ]
-  },
+    },   
   "extra": {
         "drupal-scaffold": {
             "locations": {
@@ -75,7 +60,7 @@
             "post-create-project-cmd-message": [
                 "<bg=blue;fg=white>                                                         </>",
                 "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+                "<bg=blue;fg=white>  from habeuk.com. @See habeuk/drupal_project_habeuk          </>",
                 "<bg=blue;fg=white>                                                         </>",
                 "",
                 "<bg=yellow;fg=black>Next steps</>:",
@@ -89,5 +74,16 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
-    }  
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/NpmPackage.php"
+        ]
+  }, 
+    "scripts" : {
+  	"npm-install": "DrupalHabeuk\\NpmPackage::npmInstall",
+  	 "post-install-cmd": [
+            "DrupalHabeuk\\NpmPackage::npmInstall"
+        ]
+  }  
 }
