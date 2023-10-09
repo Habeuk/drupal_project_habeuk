@@ -1,6 +1,6 @@
 # Composer template for Drupal projects by habeuk.com
 
-Installation de drupal 9
+Installation de drupal 10
 
 ```
 Creer un dossier nommé /siteweb/mydrupal, acceder à ce dossier et executer la commande ci-déssous:
