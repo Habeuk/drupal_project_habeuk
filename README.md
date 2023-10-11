@@ -26,9 +26,25 @@ php -d memory_limit=256M ./core/scripts/drupal quick-start habeuk_profile
 
 Cette commande installe Drupal en utilisant le moteur de base de donnée SQLite.
 
+## Installation
+
+Vous devez avoir un serveur web et un hote virtuel configuré
+
+Acceder au dossier public, executer les commande suivantes :
+
+```
+vendor/bin/drush site:install habeuk_profile
+```
+
+Suivez les instructions afin de terminer l'installation de drupal 10.
+
+L'installation du site se termine par la creation d'un compte adminitrateur.
+
+Vous pouvez utiliser ces identifiant afin d'acceder à votre nouveaau site web.
+
 #### Commande utile
 
-- Demarrer le serveur
+- Demarrer le serveur ( apres installation, et l'executé dans le repertoire /siteweb/mydrupal/public/web )
 
 ```
  php -S localhost:8000
@@ -48,19 +64,3 @@ vendor/bin/drush uli --uid=1  --uri=http://example.hbk/ --no-browser
 ```
  sudo chmod -R 777 sites/default/ && sudo rm sites/default/settings.php && sudo rm -r sites/default/files/
 ```
-
-## Installation
-
-Vous devez avoir un serveur web et un hote virtuel configuré
-
-Acceder au dossier public, executer les commande suivantes :
-
-```
-vendor/bin/drush site:install habeuk_profile
-```
-
-Suivez les instructions afin de terminer l'installation de drupal 10.
-
-L'installation du site se termine par la creation d'un compte adminitrateur.
-
-Vous pouvez utiliser ces identifiant afin d'acceder à votre nouveaau site web.
