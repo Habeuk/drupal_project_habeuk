@@ -11,6 +11,15 @@ composer create-project habeuk/drupal_project_habeuk:dev-10x public --no-interac
 
 Cette commande cree un dossier public et y telechage les fichiers de drupal. ( plus d'infos ).
 
+## Requirement
+
+composer >= 2.6.5 and PHP >= 8.1
+
+```
+composer clearcache
+composer selfupdate
+```
+
 ## Installation rapide
 
 Vous pouvez tester le site en suivant les etapes ci-apres.
