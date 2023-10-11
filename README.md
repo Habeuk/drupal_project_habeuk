@@ -2,13 +2,10 @@
 
 Installation de drupal 10
 
-```
 Creer un dossier nommé /siteweb/mydrupal, acceder à ce dossier et executer la commande ci-déssous:
-```
 
+```
 cd /siteweb/mydrupal
-
-```
 composer create-project habeuk/drupal_project_habeuk:dev-10x public --no-interaction
 ```
 
