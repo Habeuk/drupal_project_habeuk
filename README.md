@@ -34,7 +34,7 @@ Cette commande installe Drupal en utilisant le moteur de base de donnée SQLite.
  php -S localhost:8000
 ```
 
-- Generer une URL de connexion ( utile si vous avez oubliez le mot de passe )
+- Generer une URL de connexion ( utile si vous avez oublié le mot de passe )
 
 ```
 vendor/bin/drush uli --uid=1  --uri=http://example.hbk/ --no-browser
