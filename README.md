@@ -18,6 +18,7 @@ Vous pouvez tester le site en suivant les etapes ci-apres.
 Acceder au dossier /siteweb/mydrupal/public/web et execute la commande :
 
 ```
+cd /siteweb/mydrupal/public/web
 php -d memory_limit=256M ./core/scripts/drupal quick-start habeuk_profile
 ```
 
