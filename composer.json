@@ -21,7 +21,7 @@
     "drupal/core-project-message": "^9.5",
     "drupal/core-recommended": "^9.5",
     "drush/drush": "^11.1",
-    "habeuk/habeuk_profile": "^2.0 | dev-2x"
+    "habeuk/habeuk_profile": "^3.2.3 | dev-3x"
   },
   "conflict": {
     "drupal/drupal": "*"
