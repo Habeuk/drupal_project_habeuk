@@ -56,6 +56,11 @@ Vous pouvez utiliser ces identifiant afin d'acceder à votre nouveaau site web.
 ```
  php -S localhost:8000
 ```
+ou 
+```
+ php -S localserver-php.hbk:8000
+```
+Dans ce cas de figure, vous devez ajouter localserver-php.hbk dans votre fichier /etc/hosts
 
 - Generer une URL de connexion ( utile si vous avez oublié le mot de passe )
 
