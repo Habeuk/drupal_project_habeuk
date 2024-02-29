@@ -11,6 +11,12 @@
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "https://packages.drupal.org/8"
+		}, {
+			"type" : "path",
+			"url" : "/siteweb/DrupalModules/generate_style_theme",
+			"options" : {
+				"symlink" : true
+			}
 		}
 	],
 	"require" : {
@@ -35,7 +41,8 @@
 			"drupal/core-project-message" : true,
 			"phpstan/extension-installer" : true,
 			"dealerdirect/phpcodesniffer-composer-installer" : true,
-			"cweagans/composer-patches" : true
+			"cweagans/composer-patches" : true,
+			"php-http/discovery" : true
 		},
 		"sort-packages" : true
 	},
@@ -98,11 +105,11 @@
 	},
 	"autoload" : {
 		"classmap" : [
-			"scripts/NpmPackage.php"
+			"scripts/NpmPackage.php",
+			"scripts/GiveAccessInDirs.php"
 		]
 	},
 	"scripts" : {
-		"npm-install" : "DrupalHabeuk\\NpmPackage::npmInstall",
-		"post-install-cmd" : "DrupalHabeuk\\NpmPackage::npmInstall"
+		"post-install-cmd" : "DrupalHabeuk\\NpmPackage::PostInstall"
 	}
 }

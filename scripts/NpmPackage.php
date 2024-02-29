@@ -19,8 +19,26 @@ class NpmPackage {
    * @param \Composer\Script\Event $event
    *        Event to echo output.
    */
-  public static function npmInstall(Event $event) {
-    static::runNpmCommand('install', $event);
+  public static function PostInstall(Event $event) {
+    \DrupalHabeuk\GiveAccessInDirs::GiveAccess($event);
+    static::runNpmCommand('npm install', $event);
+  }
+  
+  /**
+   * Helper to run arbitrary npm scripts.
+   *
+   * @param string $command
+   *        Command to run.
+   * @param \Composer\Script\Event $event
+   *        Event to echo output.
+   */
+  protected static function runNpmCommand($command, Event $event) {
+    $packageRoot = static::getPackageRoot();
+    foreach (static::findNpmPackages($packageRoot) as $package) {
+      $path = $package->getRelativePath();
+      $event->getIO()->write(" Running  $command in $path");
+      exec("cd $packageRoot/$path;  $command");
+    }
   }
   
   /**
@@ -52,23 +70,6 @@ class NpmPackage {
     $finder->in($packageRoot)->notPath("/node_modules/");
     $finder->path("/wb_universe");
     return $finder->name("package.json");
-  }
-  
-  /**
-   * Helper to run arbitrary npm scripts.
-   *
-   * @param string $command
-   *        Command to run.
-   * @param \Composer\Script\Event $event
-   *        Event to echo output.
-   */
-  protected static function runNpmCommand($command, Event $event) {
-    $packageRoot = static::getPackageRoot();
-    foreach (static::findNpmPackages($packageRoot) as $package) {
-      $path = $package->getRelativePath();
-      $event->getIO()->write(" Running npm $command in $path");
-      exec("cd $packageRoot/$path; npm $command");
-    }
   }
   
 }
