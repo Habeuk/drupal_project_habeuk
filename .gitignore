@@ -44,3 +44,7 @@
 /update.php
 /web.config
 /.project
+#eclipse file
+/.buildpath
+/.settings
+
