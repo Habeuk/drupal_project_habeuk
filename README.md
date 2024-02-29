@@ -1,15 +1,28 @@
 # Composer template for Drupal projects by habeuk.com
 
-Installation de drupal 10
 
-Creer un dossier nommé /siteweb/mydrupal, acceder à ce dossier et executer la commande ci-déssous:
+## Telechargement des fichiers
+Telecharger automatiquement les fichiers de Drupal 10 via composer
+
+Creer un dossier nommé /siteweb/mydrupal, acceder à ce dossier:
 
 ```
-cd /siteweb/mydrupal
-composer create-project habeuk/drupal_project_habeuk:dev-10x public --no-interaction
+mkdir /siteweb/mydrupal && cd /siteweb/mydrupal
 ```
 
-Cette commande cree un dossier public et y telechage les fichiers de drupal. ( plus d'infos ).
+Generer le template d'installation ( le dossier public serra automatiquement crrer ):
+
+```
+composer create-project habeuk/drupal_project_habeuk:dev-10x public --no-interaction --no-install
+```
+
+Acceder au dossier public et executer la commande :
+
+```
+composer install
+```
+
+
 
 ## Requirement
 
