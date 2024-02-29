@@ -50,7 +50,7 @@ class NpmPackage {
     
     // On specifie ou on doit rechercher.
     $finder->in($packageRoot)->notPath("/node_modules/");
-    $finder->path("/wb_universe|theme_reference_wbu/");
+    $finder->path("/wb_universe");
     return $finder->name("package.json");
   }
   
