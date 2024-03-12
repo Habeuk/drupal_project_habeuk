@@ -105,5 +105,11 @@
 	},
 	"scripts" : {
 		"post-install-cmd" : "DrupalHabeuk\\NpmPackage::PostInstall"
+	},
+	"patches": {
+		"drupal/paragraphs": {
+			" Ajout du lien canonique au paragraph afin qu'on puisse editer les layout ": "patches/paragraphs/paragraphs.patch",
+			" Ajout du champs pour la configuration des langues au niveau des types de paragraphs ": "patches/paragraphs/paragraphs-language.patch"
+		}
 	}
 }
