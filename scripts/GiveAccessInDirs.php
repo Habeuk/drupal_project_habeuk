@@ -22,13 +22,17 @@ class GiveAccessInDirs {
   public static function GiveAccess(Event $event) {
     $DrupalRoot = static::getPackageRoot();
     $DrupalThemes = $DrupalRoot . "/themes";
-    $DrupalSites = $DrupalRoot . "/sites/default";
-    $command = "sudo chmod -R 777 $DrupalThemes";
-    $event->getIO()->write(" Running  $command");
-    exec($command);
-    $command = "sudo chmod -R 777 $DrupalSites";
-    $event->getIO()->write(" Running  $command");
-    exec($command);
+    if (file_exists($DrupalThemes)) {
+      $DrupalSites = $DrupalRoot . "/sites/default";
+      $command = "sudo chmod -R 777 $DrupalThemes";
+      $event->getIO()->write(" Running  $command");
+      exec($command);
+    }
+    if (file_exists($DrupalSites)) {
+      $command = "sudo chmod -R 777 $DrupalSites";
+      $event->getIO()->write(" Running  $command");
+      exec($command);
+    }
   }
   
   /**
