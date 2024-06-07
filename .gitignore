@@ -2,6 +2,8 @@
 /drush/contrib/
 /vendor/
 /web
+logs
+/logs
 /web/modules/contrib/
 /web/themes/contrib/
 /web/profiles/contrib/
