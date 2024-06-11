@@ -11,14 +11,7 @@
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "https://packages.drupal.org/8"
-		},
-		{
-        	"type": "path",
-        	"url": "/siteweb/DrupalProfiles/habeuk_profile",
-        	"options": {
-        		"symlink": true
-        	}
-        }
+		}
 	],
 	"require" : {
 		"composer/installers": "^2.0",
@@ -26,7 +19,7 @@
 		"drupal/core-composer-scaffold": "^10.2.6",
 		"drupal/core-project-message": "^10.2.6",
 		"drupal/core-recommended": "^10.2.6",
-		"drupal/sdc": "^2.0@alpha"
+		"habeuk/habeuk_profile": "^4.4.3"
 	},
 	"require-dev" : {
 		"drupal/core-dev" : "^10.2.6"
