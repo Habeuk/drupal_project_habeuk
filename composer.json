@@ -117,7 +117,7 @@
 				" Ajout du champs pour la configuration des langues au niveau des types de paragraphs ": "patches/paragraphs/paragraphs-language.patch"
 			},
 			"drupal/mail_login": {
-				" Bug, voir /project/mail_login/issues/3464301, probleme d'authentification ": "patches/mail_login/add_old_authentication.patch",
+				" Bug, voir /project/mail_login/issues/3464301, probleme d'authentification ": "patches/mail_login/add_old_authentication.patch"
 			}
 		}
 	}
