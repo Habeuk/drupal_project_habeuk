@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "445bce5aba41f9995e404cb2fa0a1828",
+    "content-hash": "06b60c45b8efe90d9af9abcaa5b4a43d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4255,6 +4255,38 @@
             "time": "2024-07-15T15:03:42+00:00"
         },
         {
+            "name": "habeuk/blockscontent",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Habeuk/blockscontent.git",
+                "reference": "3c454ea42baff5d0ed0240524d03bf514aa29bc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Habeuk/blockscontent/zipball/3c454ea42baff5d0ed0240524d03bf514aa29bc2",
+                "reference": "3c454ea42baff5d0ed0240524d03bf514aa29bc2",
+                "shasum": ""
+            },
+            "type": "drupal-custom-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kouwa stephane",
+                    "email": "kksasteph888@gmail.com"
+                }
+            ],
+            "description": "alternative au module block_content car ce dernier cree les boucles de latence",
+            "support": {
+                "issues": "https://github.com/Habeuk/blockscontent/issues",
+                "source": "https://github.com/Habeuk/blockscontent/tree/2.0.0"
+            },
+            "time": "2024-08-06T05:58:43+00:00"
+        },
+        {
             "name": "habeuk/debug",
             "version": "2.0.7",
             "source": {
@@ -4480,27 +4512,28 @@
         },
         {
             "name": "habeuk/habeuk_profile",
-            "version": "4.4.8",
+            "version": "4.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Habeuk/habeuk_profile.git",
-                "reference": "22a078c27d8434e3c8d85b38b1fa02603c381992"
+                "reference": "e59c7f9448d84a0a5b40280eb152f9d57f7a5e4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Habeuk/habeuk_profile/zipball/22a078c27d8434e3c8d85b38b1fa02603c381992",
-                "reference": "22a078c27d8434e3c8d85b38b1fa02603c381992",
+                "url": "https://api.github.com/repos/Habeuk/habeuk_profile/zipball/e59c7f9448d84a0a5b40280eb152f9d57f7a5e4a",
+                "reference": "e59c7f9448d84a0a5b40280eb152f9d57f7a5e4a",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.7",
                 "drupal/admin_toolbar": "^3.4",
-                "drupal/core-recommended": "^10.2.5",
+                "drupal/core-recommended": "^10.3.1",
                 "drupal/phone_international": "^3.3",
                 "drupal/twig_vardumper": "^3.0",
                 "drupal/webform": "^6.2",
                 "drush/drush": "^12",
                 "habeuk/bestlayouts": "^1.0.6|dev-1x",
+                "habeuk/blockscontent": "^2.0.0|dev-2x",
                 "habeuk/drupal_utility": "^1.0.0|dev-1x",
                 "habeuk/habeuk_minimal_profile": "^1.2.1",
                 "habeuk/habeuk_utilitaire": "dev-1x|^1.0.2"
@@ -4519,9 +4552,9 @@
             "description": "profile habeuk",
             "support": {
                 "issues": "https://github.com/Habeuk/habeuk_profile/issues",
-                "source": "https://github.com/Habeuk/habeuk_profile/tree/4.4.8"
+                "source": "https://github.com/Habeuk/habeuk_profile/tree/4.4.11"
             },
-            "time": "2024-07-15T15:11:43+00:00"
+            "time": "2024-08-06T06:00:08+00:00"
         },
         {
             "name": "habeuk/habeuk_utilitaire",
@@ -10973,16 +11006,16 @@
         },
         {
             "name": "lullabot/php-webdriver",
-            "version": "v2.0.5",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lullabot/php-webdriver.git",
-                "reference": "b686c5fe74ae4f3d5f7ff6e45234d99562de9ff4"
+                "reference": "8c28db7151b8a73bd98861fe19972ac3f40184d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lullabot/php-webdriver/zipball/b686c5fe74ae4f3d5f7ff6e45234d99562de9ff4",
-                "reference": "b686c5fe74ae4f3d5f7ff6e45234d99562de9ff4",
+                "url": "https://api.github.com/repos/Lullabot/php-webdriver/zipball/8c28db7151b8a73bd98861fe19972ac3f40184d2",
+                "reference": "8c28db7151b8a73bd98861fe19972ac3f40184d2",
                 "shasum": ""
             },
             "require": {
@@ -11015,9 +11048,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Lullabot/php-webdriver/issues",
-                "source": "https://github.com/Lullabot/php-webdriver/tree/v2.0.5"
+                "source": "https://github.com/Lullabot/php-webdriver/tree/v2.0.6"
             },
-            "time": "2024-07-17T15:21:54+00:00"
+            "time": "2024-08-05T13:00:46+00:00"
         },
         {
             "name": "mglaman/phpstan-drupal",
