@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f092dffde46d8bd10624df67aa8033f4",
+    "content-hash": "17e24c50562dd3889f9d68b920921dea",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3192,6 +3192,60 @@
             "time": "2023-07-19T22:22:22+00:00"
         },
         {
+            "name": "drupal/select2",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/select2.git",
+                "reference": "8.x-1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/select2-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "2d86044443e535825ddd7cfbec36e7827854ef43"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/facets": "2.0.x-dev",
+                "drupal/form_options_attributes": "^2.0",
+                "drupal/search_api": "^1.28"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.15",
+                    "datestamp": "1683286912",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://www.drupal.org/user/157725",
+                    "email": "christian.fritsch@burda.com"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                }
+            ],
+            "description": "Integration with the select2 JavaScript library.",
+            "homepage": "https://www.drupal.org/project/select2",
+            "support": {
+                "source": "https://git.drupalcode.org/project/select2"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.15.0",
             "source": {
@@ -4538,16 +4592,16 @@
         },
         {
             "name": "habeuk/drupal_utility",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Habeuk/drupal_utility.git",
-                "reference": "33f4e308d9c1cea2bb6c9aab615f1c55c05f76ce"
+                "reference": "37fde6d95330ff52809e69eb9dd3152268627db1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Habeuk/drupal_utility/zipball/33f4e308d9c1cea2bb6c9aab615f1c55c05f76ce",
-                "reference": "33f4e308d9c1cea2bb6c9aab615f1c55c05f76ce",
+                "url": "https://api.github.com/repos/Habeuk/drupal_utility/zipball/37fde6d95330ff52809e69eb9dd3152268627db1",
+                "reference": "37fde6d95330ff52809e69eb9dd3152268627db1",
                 "shasum": ""
             },
             "type": "library",
@@ -4569,9 +4623,9 @@
             "description": "utilitaire drupal",
             "support": {
                 "issues": "https://github.com/Habeuk/drupal_utility/issues",
-                "source": "https://github.com/Habeuk/drupal_utility/tree/1.0.2"
+                "source": "https://github.com/Habeuk/drupal_utility/tree/1.0.3"
             },
-            "time": "2024-09-02T17:30:59+00:00"
+            "time": "2024-09-03T08:45:48+00:00"
         },
         {
             "name": "habeuk/fast_models",
@@ -4719,11 +4773,17 @@
         },
         {
             "name": "habeuk/habeuk_profile",
-            "version": "dev-4x",
+            "version": "4.4.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Habeuk/habeuk_profile.git",
+                "reference": "fc784c13f7629c8f748fd6a6b73c20eaffeef93a"
+            },
             "dist": {
-                "type": "path",
-                "url": "/siteweb/DrupalProfiles/habeuk_profile",
-                "reference": "da9433666ed21dc1e9ab088af6b6079cbe817ede"
+                "type": "zip",
+                "url": "https://api.github.com/repos/Habeuk/habeuk_profile/zipball/fc784c13f7629c8f748fd6a6b73c20eaffeef93a",
+                "reference": "fc784c13f7629c8f748fd6a6b73c20eaffeef93a",
+                "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.7",
@@ -4732,6 +4792,7 @@
                 "drupal/inline_entity_form": "^3.0@RC",
                 "drupal/metatag": "^2.0",
                 "drupal/phone_international": "^3.3",
+                "drupal/select2": "^1.15",
                 "drupal/twig_vardumper": "^3.0",
                 "drupal/webform": "^6.2",
                 "drush/drush": "^12",
@@ -4745,6 +4806,7 @@
                 "stephane888/fielditem_renderby_view": "^2.0"
             },
             "type": "drupal-custom-profile",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4755,10 +4817,11 @@
                 }
             ],
             "description": "profile habeuk",
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/Habeuk/habeuk_profile/issues",
+                "source": "https://github.com/Habeuk/habeuk_profile/tree/4.4.21"
+            },
+            "time": "2024-09-03T07:16:41+00:00"
         },
         {
             "name": "habeuk/habeuk_utilitaire",
@@ -14709,11 +14772,17 @@
         },
         {
             "name": "stephane888/export_import_entities",
-            "version": "dev-3x",
+            "version": "3.0.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stephane888/export_import_entities.git",
+                "reference": "4a1e4ba38b2be0eb56a936cb0dc09f2c1bc9fb46"
+            },
             "dist": {
-                "type": "path",
-                "url": "/siteweb/DrupalModules/export_import_entities",
-                "reference": "3bf4348c24ef5d63b0f84ca3e053f18ef37707f6"
+                "type": "zip",
+                "url": "https://api.github.com/repos/stephane888/export_import_entities/zipball/4a1e4ba38b2be0eb56a936cb0dc09f2c1bc9fb46",
+                "reference": "4a1e4ba38b2be0eb56a936cb0dc09f2c1bc9fb46",
+                "shasum": ""
             },
             "require": {
                 "drupal/jsonapi_resources": "^1.0@beta",
@@ -14721,6 +14790,7 @@
                 "habeuk/drupal_utility": "^1.0.1|dev-1x"
             },
             "type": "drupal-custom-module",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -14731,10 +14801,11 @@
                 }
             ],
             "description": "permet d'extraire les configurations pour un ou plusieurs entités.",
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/stephane888/export_import_entities/issues",
+                "source": "https://github.com/stephane888/export_import_entities/tree/3.0.22"
+            },
+            "time": "2024-09-03T07:41:10+00:00"
         },
         {
             "name": "symfony/browser-kit",
