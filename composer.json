@@ -27,7 +27,7 @@
 		"drupal/core-composer-scaffold": "^10.3.5",
 		"drupal/core-project-message": "^10.3.5",
 		"drupal/core-recommended": "^10.3.5",
-		"habeuk/habeuk_profile": "^4.4.27|dev-4x"
+		"habeuk/habeuk_profile": "^4.4.29|dev-4x"
 	},
 	"require-dev" : {
 		"drupal/core-dev": "^10.3.5",
