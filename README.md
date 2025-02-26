@@ -13,7 +13,7 @@ mkdir /siteweb/mydrupal && cd /siteweb/mydrupal
 Generer le template d'installation ( le dossier public serra automatiquement crrer ):
 
 ```
-composer create-project habeuk/drupal_project_habeuk:^10.0.2 public --no-interaction --no-install
+composer create-project habeuk/drupal_project_habeuk:^10.0.6 public --no-interaction --no-install
 ```
 
 Acceder au dossier public et executer la commande :
@@ -26,7 +26,7 @@ composer install
 
 ## Requirement
 
-composer >= 2.6.5 and PHP >= 8.1
+composer >= 2.6.5 and PHP >= 8.3
 
 ```
 composer clearcache
