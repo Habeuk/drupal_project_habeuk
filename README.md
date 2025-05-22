@@ -13,7 +13,7 @@ mkdir /siteweb/mydrupal && cd /siteweb/mydrupal
 Generer le template d'installation ( le dossier public serra automatiquement crrer ):
 
 ```
-composer create-project habeuk/drupal_project_habeuk:^10.0.9 public --no-interaction --no-install
+composer create-project habeuk/drupal_project_habeuk:^10.0.10 public --no-interaction --no-install
 ```
 
 Acceder au dossier public et executer la commande :
