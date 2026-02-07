@@ -17,11 +17,7 @@
 	"require" : {
 		"composer/installers": "^2.0",
 		"cweagans/composer-patches": "*",
-		"drupal/core-composer-scaffold": "^10.4.3",
-		"drupal/core-project-message": "^10.4.3",
-		"drupal/core-recommended": "10.4.3",
-		"drupal/paragraphs": "1.18.0",
-		"habeuk/habeuk_profile": "^4.4.32|dev-4x"
+		"habeuk/habeuk_profile": "^5.0.1|5.x-dev"
 	},
 	"conflict" : {
 		"drupal/drupal" : "*"
@@ -111,20 +107,14 @@
 				"Ajout de l'id au niveau du label, champs autocomplete entitie": "patches/core/entity_autocomplete_matcher.patch",
 				"Support des images webp par ckeditor": "https://www.drupal.org/files/issues/2024-08-14/3386605-9-add-ckeditor5-support-for-webp.patch"
 			},
-			"drupal/inline_entity_form": {
-                " Save default value complex inline form ": "https://www.drupal.org/files/issues/2019-03-20/complex_widget_default_value-3041572-5.patch"
-            },
 			"drupal/search_api": {
 				" desactivation du plugin:filter::search_api_term definie dans search_api.module ": "patches/search_api/search_api_module.patch"
 			},
 			"drupal/paragraphs": {
-				" Ajout du lien canonique au paragraph afin qu'on puisse editer les layout ": "patches/paragraphs/paragraphs.patch",
-				" Ajout du champs pour la configuration des langues au niveau des types de paragraphs ": "patches/paragraphs/paragraphs-language.patch",
-				" Modifications de la logique des filtres de references ": "patches/paragraphs/paragraphs_ref_selectiob.patch"
-			},
-			"drupal/mail_login": {
-				" Bug, voir /project/mail_login/issues/3464301, probleme d'authentification ": "patches/mail_login/add_old_authentication.patch"
-			}
+				" Ajout du lien canonique au paragraph afin qu'on puisse editer les layout ": "patches/paragraphs/paragraphs-1-19-0.patch",
+				" Ajout du champs pour la configuration des langues au niveau des types de paragraphs ":"patches/paragraphs/paragraphs-language.patch",
+				" Ajout du champs pour la configuration des langues au niveau des types de paragraphs ":"patches/paragraphs/paragraphs_ref_selectiob.patch"
+			  }
 		}
 	}
 }
