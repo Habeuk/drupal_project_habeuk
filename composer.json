@@ -17,8 +17,15 @@
 	"require" : {
 		"composer/installers": "^2.0",
 		"cweagans/composer-patches": "*",
+		"composer/installers": "^2.0",
+        "drupal/core-composer-scaffold": "^10.6",
+        "drupal/core-project-message": "^10.6",
+        "drupal/core-recommended": "^10.6",
 		"habeuk/habeuk_profile": "^5.0.1|5.x-dev"
 	},
+	"require-dev": {
+        "drupal/core-dev": "^10.6"
+    },
 	"conflict" : {
 		"drupal/drupal" : "*"
 	},
